@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: argocd-env-configmap
 data:
-  ARGOCD_SERVER: https://argocd.k8s-argocd.tk
+  ARGOCD_SERVER: argocd.k8s-argocd.tk
   ARGOCD_APPLICATION_NAME: tekton-pipeline-app
   ARGOCD_APPLICATION_REVISION: HEAD
 
