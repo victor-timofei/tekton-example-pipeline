@@ -1,0 +1,12 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: EventListener
+metadata:
+  name: tekton-argocd-example-build-el
+spec:
+  serviceAccountName: tekton-triggers-admin
+  triggers:
+  - bindings:
+    - ref: tekton-argocd-example-build-git-tb
+    template:
+      ref: tekton-argocd-example-build-tt
+

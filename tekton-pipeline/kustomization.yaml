@@ -15,4 +15,8 @@ resources:
 - tasks/build-task.yaml
 - tasks/argocd-task.yaml
 - pipelines/build-deploy-pipeline.yaml
-- triggers/build-deploy-trigger.yaml
+- triggers/trigger-template.yaml
+- triggers/trigger-binding.yaml
+- triggers/event-listener.yaml
+- triggers/certificate.yaml
+- triggers/ingress.yaml
