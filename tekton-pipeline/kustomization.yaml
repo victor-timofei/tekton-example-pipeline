@@ -8,11 +8,11 @@ commonLabels:
   deploy: argocd
 
 resources:
-- resources/pipeline-admin-role.yml
-- resources/triggers-admin-role.yml
-- resources/build-task-cm.yml
-- resources/argocd-task-cm.yml
-- tasks/build-task.yml
-- tasks/argocd-task.yml
-- pipelines/build-deploy-pipeline.yml
-- triggers/build-deploy-trigger.yml
+- resources/pipeline-admin-role.yaml
+- resources/triggers-admin-role.yaml
+- resources/build-task-cm.yaml
+- resources/argocd-task-cm.yaml
+- tasks/build-task.yaml
+- tasks/argocd-task.yaml
+- pipelines/build-deploy-pipeline.yaml
+- triggers/build-deploy-trigger.yaml
