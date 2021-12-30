@@ -20,5 +20,5 @@ spec:
       # TODO: REMOVE insecure flag when using prod server
       script: |
         argocd login $ARGOCD_SERVER --insecure --grpc-web --username $ARGOCD_USERNAME --password $ARGOCD_PASSWORD
-        argocd app sync $ARGOCD_APPLICATION_NAME --grpc-web $(params.flags) --server $ARGOCD_SERVER
+        argocd app sync $ARGOCD_APPLICATION_NAME --prune --grpc-web $(params.flags) --server $ARGOCD_SERVER
         argocd app wait $ARGOCD_APPLICATION_NAME --grpc-web --health $(params.flags) --server $ARGOCD_SERVER
