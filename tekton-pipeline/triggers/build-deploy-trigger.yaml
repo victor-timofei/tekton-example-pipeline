@@ -116,7 +116,7 @@ spec:
   - host: k8s-argocd.tk
     http:
       paths:
-      - path: /tekton-argocd-example-build-mapping/
+      - path: /tekton-argocd-example-build-webhook/
         pathType: Prefix
         backend:
           service: 
