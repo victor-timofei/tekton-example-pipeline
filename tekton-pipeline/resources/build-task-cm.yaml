@@ -6,4 +6,4 @@ metadata:
 data:
   DOCKER_TAG: "1.0.0"
   DOCKER_IMAGE_NAME: hello-app
-  DOCKER_NAMESPACE: tekton-demo
+  DOCKER_NAMESPACE: vtimofei
